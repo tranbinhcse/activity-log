@@ -1,0 +1,43 @@
+{
+    "name": "tinoapp/activity-log",
+    "description": "User activity log plugin for Tino.",
+    "keywords": [
+        "laravel",
+        "tino",
+        "activity log",
+        "user activity"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tran Binh",
+            "email": "binh@tino.org",
+            "homepage": "https://tino.org",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "illuminate/http": "^8.0",
+        "tinoapp/plugins": "^3.0",
+        "spatie/laravel-query-builder": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tino\\UserActivity\\": "src/",
+            "Tino\\UserActivity\\Database\\Factories\\": "database/factories/",
+            "Tino\\UserActivity\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tino\\UserActivity\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
